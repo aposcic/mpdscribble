@@ -51,7 +51,8 @@ played_long_enough(std::chrono::steady_clock::duration elapsed,
 	   played."
 	 */
 	return elapsed > std::chrono::minutes(4) ||
-		(length >= std::chrono::seconds(30) && elapsed > length / 2);
+		(length >= std::chrono::seconds(30) && elapsed > length / 2) ||
+		(length == std::chrono::seconds(0) && elapsed >= std::chrono::seconds(30));
 }
 
 /**

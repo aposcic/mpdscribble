@@ -2,3 +2,4 @@
 .stgitmsg.txt*
 *~
 .stgit-edit.txt
+.vscode/
