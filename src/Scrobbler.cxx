@@ -36,6 +36,8 @@
 #include <errno.h>
 #include <string.h>
 
+#include <regex>
+
 /* don't submit more than this amount of songs in a batch. */
 #define MAX_SUBMIT_COUNT 10
 
@@ -469,6 +471,21 @@ Scrobbler::ScheduleNowPlaying(const Record &song) noexcept
 		ScheduleSubmit();
 }
 
+static std::string
+clean_title(std::string title, std::string remove_pattern)
+{
+	std::regex e(remove_pattern, std::regex_constants::icase);
+	std::string clean_title;
+
+	if (!remove_pattern.empty())
+		std::regex_replace(std::back_inserter(clean_title),
+			title.begin(), title.end(), e, "");
+	else
+		clean_title = title;
+
+	return clean_title;
+}
+
 void
 Scrobbler::Submit() noexcept
 {
@@ -484,8 +501,10 @@ Scrobbler::Submit() noexcept
 		   scheduled - these should be sent after song submissions */
 		if (record_is_defined(&now_playing))
 			SendNowPlaying(now_playing.artist.c_str(),
-				       now_playing.track.c_str(),
-				       now_playing.album.c_str(),
+				       clean_title(now_playing.track,
+							 		config.track_title_remove).c_str(),
+				       clean_title(now_playing.album,
+							 		config.album_title_remove).c_str(),
 				       now_playing.number.c_str(),
 				       now_playing.mbid.c_str(),
 				       now_playing.length);
@@ -506,13 +525,15 @@ Scrobbler::Submit() noexcept
 		const auto *song = &i;
 
 		post_data.AppendIndexed("a", count, song->artist);
-		post_data.AppendIndexed("t", count, song->track);
+		post_data.AppendIndexed("t", count, clean_title(song->track,
+																					config.track_title_remove));
 		post_data.AppendIndexed("l", count,
 					std::chrono::duration_cast<std::chrono::seconds>(song->length).count());
 		post_data.AppendIndexed("i", count, song->time);
 		post_data.AppendIndexed("o", count, song->source);
 		post_data.AppendIndexed("r", count, "");
-		post_data.AppendIndexed("b", count, song->album);
+		post_data.AppendIndexed("b",count, clean_title(song->album,
+																			 		config.album_title_remove));
 		post_data.AppendIndexed("n", count, song->number);
 		post_data.AppendIndexed("m", count, song->mbid);
 

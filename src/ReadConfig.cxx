@@ -212,7 +212,7 @@ load_scrobbler_config(const Config &config,
 {
 	ScrobblerConfig scrobbler;
 
-	/* Use default host for mpdscribble group, for backward compatability */
+	/* Use default host for mpdscribble group, for backward compatibility */
 	if (section_name.empty()) {
 		scrobbler.name = "last.fm";
 		scrobbler.url = AS_HOST;
@@ -235,6 +235,9 @@ load_scrobbler_config(const Config &config,
 		if (scrobbler.password.empty())
 			throw std::runtime_error("No 'password'");
 	}
+
+	scrobbler.album_title_remove = GetStdString(section, "album_title_remove");
+	scrobbler.track_title_remove = GetStdString(section, "track_title_remove");
 
 	scrobbler.journal = GetStdString(section, "journal");
 	if (scrobbler.journal.empty() && section_name.empty()) {
