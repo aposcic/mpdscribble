@@ -26,10 +26,10 @@
 #include <utility>
 
 enum class LogLevel {
-	DEBUG,
-	INFO,
-	WARNING,
 	ERROR,
+	WARNING,
+	INFO,
+	DEBUG,
 };
 
 /**
