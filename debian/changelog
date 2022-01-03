@@ -1,0 +1,489 @@
+mpdscribble (0.23-1) UNRELEASED; urgency=medium
+
+  * New upstream release (closes: #973958).
+  * Update debian/watch (missing xz compression)
+  * Enable pgpmode in watch file, add upstream signing key
+  * Add basic upstream metadata
+  * debian/patches: Drop all patches, upstream uses to meson/ninja
+  * Update for meson build
+  * debian/mpdscribble.docs: fixed README extension
+  * Drop -dbg migration code in d/rules
+  * Don't install COPYING file
+  * Update copyright file
+  * Fixed national-encoding in debian/po files
+  * Fixed recursive-privilege-change in postinst script
+  * Bump standards to 4.5.1 (no changes needed)
+
+ -- Geoffroy Youri Berret <efrim@azylum.org>  Tue, 20 Apr 2021 14:55:10 +0200
+
+mpdscribble (0.22-6) unstable; urgency=medium
+
+  * Switch to the debhelper compat level 12.
+  * Replace debian/compat with B-D: debhelper-compat.
+  * Bump Standards-Version to 4.3.0.
+  * Switch to the automatic debug packages.
+  * Update URLs in Homepage and debian/copyright.
+  * Update my email and copyright years in debian/copyright.
+  * Update Vcs-* fields to use salsa.
+  * Use HTTPS in debian/watch.
+  * Use HTTPS for the copyright format URL.
+  * Don't install NEWS as changelog.
+  * Don't remove the user and the group on purge.
+
+ -- Andrey Rahmatullin <wrar@debian.org>  Tue, 05 Feb 2019 21:35:35 +0500
+
+mpdscribble (0.22-5) unstable; urgency=medium
+
+  * Use dh-autoreconf (and fix an autoconf 2.68+ warning) (Closes: #744472).
+  * Update debian/watch.
+  * Bump Standards-Version to 3.9.5 (no change needed).
+  * Enable NoNewPrivileges in the systemd service file.
+
+ -- Andrey Rahmatullin <wrar@debian.org>  Sun, 31 Aug 2014 20:23:27 +0600
+
+mpdscribble (0.22-4) unstable; urgency=low
+
+  * Team upload
+
+  [ Andrey Rahmatullin ]
+  * Move the config example from /usr/share/doc/mpdscribble to
+    /usr/share/mpdscribble as it is used in the postinst (Closes: #710066).
+  * Bump Standards-Version to 3.9.4 (no change needed).
+  * Use canonical URLs in Vcs-* control fields.
+  * Don't pass explicit update-rc.d params to dh_installinit.
+  * Add preliminary systemd support.
+  * Fix inverted handling of MPD_SYSTEMWIDE in mpdscribble.config.
+
+  [ Florian Schlichting ]
+  * Remove unnecessary version from dh-systemd dependency (no older version in
+    the archive)
+  * Refresh debian/copyright
+
+ -- Florian Schlichting <fsfs@debian.org>  Tue, 26 Nov 2013 23:13:45 +0100
+
+mpdscribble (0.22-3) unstable; urgency=low
+
+  [Daniel Martí]
+  * Add status option to the initscript.
+
+  [Andrey Rahmatullin]
+  * Adopt the package, move it to the pkg-mpd team. Update Maintainer,
+    Uploaders, Vcs-* accordingly (Closes: #612908).
+  * Bump debhelper compatibility level to 9.
+  * Enable all hardening options.
+  * Explicitly use the soup backend instead of the default curl backend.
+  * Update debian/copyright to the latest DEP5 version.
+  * Drop obsolete README.source.
+  * Bump Standards-Version to 3.9.3 (no change needed).
+  * Drop an ancient version from the ucf dependency.
+
+ -- Andrey Rahmatullin <wrar@wrar.name>  Fri, 09 Mar 2012 01:14:07 +0600
+
+mpdscribble (0.22-2) unstable; urgency=low
+
+  * QA upload.
+  * Fix pending l10n issues. Debconf translations:
+    - Japanese (Hideki Yamane (Debian-JP)).  Closes: #624731
+    - Polish (Michał Kułach).  Closes: #660219
+    - Danish (Joe Hansen).  Closes: #660256
+    - Slovak (Ivan Masár).  Closes: #661135
+
+ -- Christian Perrier <bubulle@debian.org>  Sun, 26 Feb 2012 10:13:03 +0100
+
+mpdscribble (0.22-1) unstable; urgency=low
+
+  * Orphaning package, changing maintainer to QA.
+  * New upstream release.
+  * Bump standards to 3.9.2.
+  * Add build-arch/indep targets.
+
+ -- Michal Čihař <nijel@debian.org>  Fri, 05 Aug 2011 14:14:04 +0200
+
+mpdscribble (0.21-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Michal Čihař <nijel@debian.org>  Mon, 31 Jan 2011 11:51:46 +0100
+
+mpdscribble (0.20-1) unstable; urgency=low
+
+  * New upstream release.
+    - All patches integrated upstream.
+
+ -- Michal Čihař <nijel@debian.org>  Mon, 15 Nov 2010 09:45:18 +0100
+
+mpdscribble (0.19-2) unstable; urgency=low
+
+  * Convert to 3.0 (quilt) source format.
+  * Fix infinite submittion of now playing (Closes: #596036).
+  * Rebuilt against current libc (Closes: #596445).
+  * Bump standards to 3.9.1.
+  * Move packaging SVN repository to collab-maint.
+  * Fix dashes in man pages.
+
+ -- Michal Čihař <nijel@debian.org>  Tue, 14 Sep 2010 09:24:42 +0200
+
+mpdscribble (0.19-1) unstable; urgency=low
+
+  * New upstream version.
+  * Use system libmpdclient.
+
+ -- Michal Čihař <nijel@debian.org>  Sat, 02 Jan 2010 13:22:59 +0100
+
+mpdscribble (0.18.1-2) unstable; urgency=low
+
+  * Lower init script dependency on mpd to should, as we can work with remote
+    mpd also (caught by piuparts testing).
+
+ -- Michal Čihař <nijel@debian.org>  Mon, 21 Sep 2009 11:57:06 +0200
+
+mpdscribble (0.18.1-1) unstable; urgency=low
+
+  * New upstream release.
+    - No useless complains about missing journal (Closes: #540112).
+  * Update to policy 3.8.3 (no changes needed).
+
+ -- Michal Čihař <nijel@debian.org>  Thu, 03 Sep 2009 12:00:36 +0200
+
+mpdscribble (0.18-3) unstable; urgency=low
+
+  * Fix typo breaking generating of /etc/default/mpdscribble.
+  * Fix typo preventing mpdscribble to start.
+  * Use debconf value if there was any previously, do not blindly set it
+    according to newly created config file with defaults.
+  * Manage /etc/default/mpdscribble using ucf.
+  * Do not use return in init script, exit is correct.
+
+ -- Michal Čihař <nijel@debian.org>  Thu, 16 Jul 2009 11:53:13 +0200
+
+mpdscribble (0.18-2) unstable; urgency=low
+
+  * Use settings in /etc/default/mpdscribble instead of just debconf for
+    remembering whether mpdscribble should be started systemwine
+    (Closes: #536735).
+
+ -- Michal Čihař <nijel@debian.org>  Wed, 15 Jul 2009 10:34:09 +0200
+
+mpdscribble (0.18-1) unstable; urgency=low
+
+  * New upstream version.
+    - Allows to use custom AS_HOST (Closes: #522714).
+  * Move mpdscribble-dbg to debug section.
+  * Update to policy 3.8.2 (no changes needed).
+  * Mention support for Libre.fm in description.
+
+ -- Michal Čihař <nijel@debian.org>  Thu, 09 Jul 2009 08:18:46 +0200
+
+mpdscribble (0.17-1) unstable; urgency=low
+
+  * New upstrem release.
+  * Depend on ucf (>= 0.28) for --debconf-ok.
+  * Use new daemonizing/chuid/pid features of mpdscribble.
+  * Use override feature of debhelper in debian/rules.
+
+ -- Michal Čihař <nijel@debian.org>  Thu, 05 Mar 2009 10:37:46 +0100
+
+mpdscribble (0.16-3) unstable; urgency=low
+
+  * Do not ship /var/cache/mpdscrible/cache directory, it should be file
+    created by mpdscribble (Closes: #514734).
+  * Call ucf with --debconf-ok.
+
+ -- Michal Čihař <nijel@debian.org>  Tue, 10 Feb 2009 15:01:49 +0100
+
+mpdscribble (0.16-2) unstable; urgency=low
+
+  * Upload to unstable.
+  * [INTL:es] New Spanish translation (Closes: #512997).
+  * Update debian/copyright.
+
+ -- Michal Čihař <nijel@debian.org>  Mon, 09 Feb 2009 17:50:15 +0100
+
+mpdscribble (0.16-1) experimental; urgency=low
+
+  * New upstream release.
+  * New version can write PID file and run as a daemon (but it is not useful
+    as we don't want to run mpdscribble as root and writing PID works only as
+    root).
+
+ -- Michal Čihař <nijel@debian.org>  Tue, 20 Jan 2009 17:50:16 +0100
+
+mpdscribble (0.15-2) experimental; urgency=low
+
+  * Improve description a bit.
+  * Install NEWS as a changelog.
+  * Do not create log as the package now uses syslog.
+  * Create /etc/mpdscribble.conf even if not using systemwide configuration.
+  * Remove temp file used in generating configuration.
+  * Create /etc/mpdscribble.conf with correct permissions.
+  * Tell adduser not to create home directory for mpdscribble user (it's
+    shipped in package).
+  * Remove dpkg-override for cache on purge.
+
+ -- Michal Čihař <nijel@debian.org>  Tue, 06 Jan 2009 17:14:50 +0100
+
+mpdscribble (0.15-1) experimental; urgency=low
+
+  * New upstream release.
+
+ -- Michal Čihař <nijel@debian.org>  Mon, 05 Jan 2009 08:22:31 +0100
+
+mpdscribble (0.14-1) experimental; urgency=low
+
+  * New upstream release.
+    - Drop all patches as they were integrated upstream.
+    - Do not use system libmpd as it is not supported by upstream
+    (libmpdclient which will be properly supported should be available soon).
+  * Adjust debian/watch to new upstream.
+  * Point homepage to musicpd.org wiki.
+  * delgroup has no --system switch.
+  * Do not ignore errors in config script.
+  * Update debian/copyright to match upstream source changes.
+  * Drop not needed build deps: libmpd-dev, dpatch.
+  * Add misc:Depends do mpdscribble-dbg depends.
+  * Install upstream config file as an example.
+  * Handle config file using ucf to preserver user changes.
+  * Drop logrotate support as mpdscribble now uses syslog by default.
+  * Upload to experimental because of excessive changes.
+
+ -- Michal Čihař <nijel@debian.org>  Fri, 26 Dec 2008 16:58:05 +0100
+
+mpdscribble (0.2.12-13) unstable; urgency=low
+
+  * Add README.source.
+  * Update to standards 3.8.0.
+  * Integrate some patches from upstream BTS:
+    - Switch to libsoup-2.4.
+    - Fix crash, when Ctrl+C is pressed.
+    - Fix typo in help.
+    - Fix memory corruption in some cases.
+    - Fix some compilation warnings and code errors.
+  * Switch to debhelper 7.
+  * Add debug package.
+
+ -- Michal Čihař <nijel@debian.org>  Mon, 22 Sep 2008 15:16:12 +0200
+
+mpdscribble (0.2.12-12) unstable; urgency=low
+
+  * Fix configuring of proxy from config file (Closes: #482484).
+  * Fix location of config file in man page (Closes: #482485).
+
+ -- Michal Čihař <nijel@debian.org>  Fri, 23 May 2008 16:23:43 +0200
+
+mpdscribble (0.2.12-11) unstable; urgency=low
+
+  * Fix possible crash in proxy handling (Closes: #481482).
+
+ -- Michal Čihař <nijel@debian.org>  Mon, 19 May 2008 08:18:11 +0200
+
+mpdscribble (0.2.12-10) unstable; urgency=low
+
+  * Experimental support for HTTP proxy based on patch from upstream bug
+    tracker (Closes: #481482).
+
+ -- Michal Čihař <nijel@debian.org>  Fri, 16 May 2008 15:08:17 +0200
+
+mpdscribble (0.2.12-9) unstable; urgency=low
+
+  * Adjusted Vcs-* headers to point to trunk.
+  * First delete user then group in postrm, group with users is not deleted.
+  * Properly handle config.sub/config.guess so that they won't appear in diff.
+
+ -- Michal Čihař <nijel@debian.org>  Fri, 14 Mar 2008 13:35:09 +0100
+
+mpdscribble (0.2.12-8) unstable; urgency=low
+
+  * Reupload because of wrong uploader generated by dpkg last time.
+
+ -- Michal Čihař <nijel@debian.org>  Fri, 25 Jan 2008 11:38:49 +0900
+
+mpdscribble (0.2.12-7) unstable; urgency=low
+
+  * Update policy to 3.7.3 (no changes needed).
+  * Do not mark init script to stop in S runlevel.
+  * Rebuild with curent libmpd, there seems to be something broken with using
+    old one (Closes: #462255).
+
+ -- Michal Čihař <nijel@debian.org>  Wed, 23 Jan 2008 23:34:11 +0900
+
+mpdscribble (0.2.12-6) unstable; urgency=low
+
+  * Fix typo in init script.
+
+ -- Michal Čihař <nijel@debian.org>  Tue, 04 Dec 2007 12:43:16 +0900
+
+mpdscribble (0.2.12-5) unstable; urgency=low
+
+  * Use new Homepage field.
+  * Convert XS-Vcs fields to Vcs.
+  * Cleanup whitespace in scripts a bit.
+  * Split depends in debian/control to multiple lines to increase
+    readability.
+  * Write about Last.fm in man page, Audioscrobbler name is not much
+    known today.
+  * Fix NAME section of man page to make apropos and whatis work
+    correctly.
+  * Change Audioscobbler to Last.fm in debconf templates.
+  * Changed init script to mention Last.fm and not Audioscrobbler.
+  * Use -Wl,--as-needed to avoid linking with libraries we don't need till
+    pkgconfig files won't be fixed.
+
+ -- Michal Čihař <nijel@debian.org>  Mon, 03 Dec 2007 14:31:20 +0900
+
+mpdscribble (0.2.12-4) unstable; urgency=low
+
+  * Delete only system user/group.
+  * Do not ignore errors from make distclean.
+
+ -- Michal Čihař <nijel@debian.org>  Tue, 11 Sep 2007 14:56:27 +0900
+
+mpdscribble (0.2.12-3) unstable; urgency=low
+
+  * Add XS-Vcs headers.
+  * [INTL:nl] Dutch po-debconf translation (Closes: #423047).
+  * Convert patches to dpatch.
+
+ -- Michal Čihař <nijel@debian.org>  Wed, 09 May 2007 18:30:54 +0200
+
+mpdscribble (0.2.12-2) unstable; urgency=low
+
+  * Translations update:
+    - Brazilian Portuguese (Closes: #414642).
+    - Galician (Closes: #414132).:
+    - German (Closes: #412929, #414593).
+    - Portuguese (Closes: #414213).
+    - Romanian (Closes: #414862).
+    - Russian (Closes: #414265).
+    - Tamil (Closes: #414238)
+  * Change email address to my Debian account.
+  * Build against system libmpd.
+
+ -- Michal Čihař <nijel@debian.org>  Sun, 18 Mar 2007 19:26:13 +0100
+
+mpdscribble (0.2.12-1) unstable; urgency=low
+
+  * New upstream release.
+  * This version includes better fix for submission failure (Closes: #396778).
+
+ -- Michal Čihař <michal@cihar.com>  Mon,  4 Dec 2006 09:47:35 +0100
+
+mpdscribble (0.2.10-2) unstable; urgency=low
+
+  * Decrease number of submitted items if submission fails (Closes: #396778).
+  * Add init script dependency on mpd.
+
+ -- Michal Čihař <michal@cihar.com>  Fri,  3 Nov 2006 11:44:01 +0100
+
+mpdscribble (0.2.10-1) unstable; urgency=low
+
+  * New usptream version (Closes: #369703).
+  * Provide mpd-client (Closes: #359038).
+  * Update Standards-Version to 3.7.2.0.
+  * Let maintainer script fail if start/stop fails.
+  * Include colon in debconf string and password prompts.
+
+ -- Michal Čihař <michal@cihar.com>  Thu,  1 Jun 2006 22:27:57 +0200
+
+mpdscribble (0.2.7-2) unstable; urgency=low
+
+  * Fix better detection of skipping (Closes: #340869).
+
+ -- Michal Čihař <michal@cihar.com>  Sun, 27 Nov 2005 20:40:57 +0100
+
+mpdscribble (0.2.7-1) unstable; urgency=low
+
+  * New upstream release (fixes high CPU load while submitting)
+    (Closes: #336033).
+  * Better messages from init script.
+  * Swedish debconf templates translation (Closes: #332966).
+  * Italian debconf templates translation (Closes: #336681).
+  * Better dettect skipping with different sleep interval, thanks to Decklin
+    Foster <decklin@red-bean.com>.
+
+ -- Michal Čihař <michal@cihar.com>  Tue, 22 Nov 2005 22:17:10 +0100
+
+mpdscribble (0.2.6-3) unstable; urgency=low
+
+  * French debconf translation (Closes: #329933).
+  * Rewritten init script to use LSB functions.
+  * Fixed the restart target in the init script (Closes: #331416).
+
+ -- Michal Čihař <michal@cihar.com>  Mon,  3 Oct 2005 14:32:21 +0200
+
+mpdscribble (0.2.6-2) unstable; urgency=low
+
+  * [l10n] Initial Czech translation of mpdscribble debconf messages
+    (Closes: #327111).
+  * Build depends on po-debconf.
+  * Do not explicitely list debconf dependency, it's added via
+    ${misc:Depends}.
+  * Added debian/watch file.
+  * Rebuilt against new libsoup.
+
+ -- Michal Čihař <michal@cihar.com>  Thu, 15 Sep 2005 20:46:05 +0200
+
+mpdscribble (0.2.6-1) unstable; urgency=low
+
+  * New upstream release.
+  * Fix - in man pages.
+  * Create log file on installation, remove log files on purge.
+  * Create own user mpdscribble instead of assuming mpd one.
+  * Remove cache on purge.
+  * Depends also on debconf-2.0.
+  * Do not ask on user/password if not installed system-wide.
+  * Initial release for Debian. (Closes: #303810: ITP: mpdscribble -- Music
+    Player Daemon interface to Audioscrobbler).
+
+ -- Michal Čihař <michal@cihar.com>  Sat,  3 Sep 2005 11:00:43 +0200
+
+mpdscribble (0.2.5-5) unstable; urgency=low
+
+  * Update FSF address in debian/copyright.
+
+ -- Michal Čihař <michal@cihar.com>  Fri,  2 Sep 2005 20:21:17 +0200
+
+mpdscribble (0.2.5-4) unstable; urgency=low
+
+  * Update URL as it has moved.
+  * Move log file to /var/log, this avoids conflict of logrotate files with
+    mpd.
+  * Update description, because audioscrobbler is now last.fm.
+  * mpd is now only suggested as it can be connected remotely.
+
+ -- Michal Čihař <michal@cihar.com>  Fri,  2 Sep 2005 10:22:25 +0200
+
+mpdscribble (0.2.5-3) unstable; urgency=low
+
+  * Fill in copyright file.
+  * Do not list config files twice.
+  * Better description.
+  * Add libsoup2.2-dev to build depends.
+
+ -- Michal Čihař <michal@cihar.com>  Thu, 11 Aug 2005 14:41:40 +0200
+
+mpdscribble (0.2.5-2) unstable; urgency=low
+
+  * Fix path to configuration file in postinst.
+  * Fix typos in description.
+
+ -- Michal Čihař <michal@cihar.com>  Thu, 11 Aug 2005 11:57:33 +0200
+
+mpdscribble (0.2.5-1) unstable; urgency=low
+
+  * New upstream release.
+  * Start after mpd and stop before it.
+
+ -- Michal Čihař <michal@cihar.com>  Thu, 11 Aug 2005 11:06:16 +0200
+
+mpdscribble (0.2.4-2) unstable; urgency=low
+
+  * Added debconf support.
+  * Logrotate logs.
+
+ -- Michal Čihař <michal@cihar.com>  Tue,  3 May 2005 18:02:23 +0200
+
+mpdscribble (0.2.4-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Michal Čihař <michal@cihar.com>  Tue,  3 May 2005 17:02:38 +0200

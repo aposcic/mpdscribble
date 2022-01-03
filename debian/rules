@@ -1,0 +1,23 @@
+#!/usr/bin/make -f
+
+export DEB_BUILD_MAINT_OPTIONS=hardening=+all
+
+%:
+	dh $@
+
+ifeq ($(DEB_HOST_ARCH_OS), linux)
+WITH_SYSTEMD=-Dsystemd=enabled
+else
+WITH_SYSTEMD=-Dsystemd=disabled
+endif
+
+override_dh_auto_configure:
+	dh_auto_configure -- $(WITH_SYSTEMD)
+
+override_dh_auto_install:
+	dh_auto_install
+	rm debian/mpdscribble/usr/share/doc/mpdscribble/COPYING
+
+override_dh_clean:
+	debconf-updatepo
+	dh_clean

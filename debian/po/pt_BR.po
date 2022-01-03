@@ -1,0 +1,61 @@
+# mpdscribbler's Brazilian Portuguese (pt_BR) debconf template translation.
+# Copyright (C) 2007, André Luís Lopes.
+# This file is distributed under the same license as the mpdscribbler package.
+# André Luís Lopes <andrelop@debian.org>, 2007.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mpdscribbler\n"
+"Report-Msgid-Bugs-To: mpdscribble@packages.debian.org\n"
+"POT-Creation-Date: 2008-09-22 14:51+0200\n"
+"PO-Revision-Date: 2007-03-12 20:25-0200\n"
+"Last-Translator: André Luís Lopes <andrelop@debian.org>\n"
+"Language-Team: Debian-BR Project <debian-l10n-portuguese@lists.debian.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: boolean
+#. Description
+#: ../mpdscribble.templates:1001
+msgid "Install system mpdscribble service?"
+msgstr "Instalar serviço de sistema mpdscribble?"
+
+#. Type: boolean
+#. Description
+#: ../mpdscribble.templates:1001
+msgid ""
+"You can install mpdscribble as a system daemon.  The mpdscribble service "
+"will be started on boot. Note that is not necessary to run mpd as a system "
+"service as it runs fine when started manually using a regular user account."
+msgstr ""
+"Você pode instalar o mpdscribble como um daemon de sistema. O serviço "
+"mpdscribble será iniciado junto à inicialização do computador. Note que não "
+"é necessário executar o mpd como um serviço de sistema uma vez que o mesmo é "
+"executado corretamente quando é iniciado manualmente utilizando conta de "
+"usuário comum."
+
+#. Type: string
+#. Description
+#: ../mpdscribble.templates:2001
+msgid "Last.fm username:"
+msgstr "Nome de usuário Last.fm:"
+
+#. Type: string
+#. Description
+#: ../mpdscribble.templates:2001
+msgid "Enter username you use on Last.fm."
+msgstr "Informe o nome de usuário utilizado no Last.fm."
+
+#. Type: password
+#. Description
+#: ../mpdscribble.templates:3001
+msgid "Last.fm password:"
+msgstr "Senha do usuário no Last.fm:"
+
+#. Type: password
+#. Description
+#: ../mpdscribble.templates:3001
+msgid "Enter password you use on Last.fm."
+msgstr "Informe a senha que você utiliza no Last.fm."

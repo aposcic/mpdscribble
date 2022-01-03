@@ -1,0 +1,143 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: mpdscribble
+Upstream-Contact: Max Kellermann <max.kellermann@gmail.com>
+Source: https://github.com/MusicPlayerDaemon/mpdscribble
+
+Files: *
+Copyright: 2008-2010, The Music Player Daemon Project
+  2005-2008, Kuno Woudt <kuno@frob.nl>
+License: GPL-2+
+
+Files: debian/*
+Copyright: 2020, 2021, Geoffroy Youri Berret <efrim@azylum.org>
+  2012-2019, Andrey Rahmatullin <wrar@debian.org>
+  2012, Daniel Martí <danielmarti.debian@gmail.com>
+  2005-2009, Michal Čihař <nijel@debian.org>
+License: GPL-2+
+
+Files: debian/po/*
+Copyright: 2005-2012, Miroslav Kure <kurem@debian.cz>
+ Joe Hansen <joedalton2@yahoo.dk>
+ Matthias Julius <mdeb@julius-net.net>
+ Elías A.M. <rumbo_4000@yahoo.es>
+ Fernando González de Requena <fgrequena@gmail.com>
+ Steve Petruzzello <dlist@bluewin.ch>
+ Jacobo Tarrio <jtarrio@debian.org>
+ Luca Monducci <luca.mo@tiscali.it>
+ Hideki Yamane <henrich@debian.org>
+ Bart Cornelis <cobaco@skolelinux.no>
+ Michał Kułach <michal.kulach@gmail.com>
+ André Luís Lopes <andrelop@debian.org>
+ Miguel Figueiredo <elmig@debianpt.org>
+ Eddy Petrisor <eddy.petrisor@gmail.com>
+ Yuri Kozlov <kozlov.y@gmail.com>
+ Ivan Masár <helix84@centrum.sk>
+ Daniel Nylander <po@danielnylander.se>
+ Dr.T.Vasudevan <agnihot3@gmail.com>
+ Free Software Foundation, Inc.
+License: GPL-2+
+
+Files: src/*
+Copyright: 2008-2019, The Music Player Daemon Project
+  2005-2008, Kuno Woudt <kuno@frob.nl>
+License: GPL-2+
+
+Files: src/AsioGetIoService.hxx
+Copyright: 2008-2019, Max Kellermann <max.kellermann@gmail.com>
+License: BSD-2-clause
+
+Files: src/AsioServiceFwd.hxx
+  src/IniFile.cxx
+  src/IniFile.hxx
+  src/SdDaemon.hxx
+  src/gcc.h
+Copyright: 2003-2019, The Music Player Daemon Project
+License: GPL-2+
+
+Files: src/lib/*
+Copyright: 2008-2019, Max Kellermann <max.kellermann@gmail.com>
+License: BSD-2-clause
+
+Files: src/lib/curl/Escape.cxx
+  src/lib/curl/Global.cxx
+  src/lib/curl/Request.cxx
+Copyright: 2003-2019, The Music Player Daemon Project
+License: GPL-2+
+
+Files: src/lib/curl/Escape.hxx
+  src/lib/curl/Global.hxx
+  src/lib/curl/Handler.hxx
+  src/lib/curl/Request.hxx
+Copyright: 2008-2019, The Music Player Daemon Project
+  2005-2008, Kuno Woudt <kuno@frob.nl>
+License: GPL-2+
+
+Files: src/system/*
+Copyright: 2008-2019, Max Kellermann <max.kellermann@gmail.com>
+License: BSD-2-clause
+
+Files: src/time/*
+Copyright: 2008-2019, Max Kellermann <max.kellermann@gmail.com>
+License: BSD-2-clause
+
+Files: src/util/*
+Copyright: 2008-2019, Max Kellermann <max.kellermann@gmail.com>
+License: BSD-2-clause
+
+Files: src/util/Compiler.h
+  src/util/OptionDef.hxx
+  src/util/OptionParser.cxx
+  src/util/OptionParser.hxx
+Copyright: 2003-2019, The Music Player Daemon Project
+License: GPL-2+
+
+Files: src/util/PrintException.cxx
+  src/util/PrintException.hxx
+Copyright: 2007-2019, Content Management AG
+License: BSD-2-clause
+
+License: BSD-2-clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ .
+ - Redistributions of source code must retain the above copyright
+ notice, this list of conditions and the following disclaimer.
+ .
+ - Redistributions in binary form must reproduce the above copyright
+ notice, this list of conditions and the following disclaimer in the
+ documentation and/or other materials provided with the distribution.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+ A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE FOUNDATION OR
+ CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+ EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+ PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+ PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+ NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+License: GPL-2+
+ This program is free software; you can redistribute it
+ and/or modify it under the terms of the GNU General Public
+ License as published by the Free Software Foundation; either
+ version 2 of the License, or (at your option) any later
+ version.
+ .
+ This program is distributed in the hope that it will be
+ useful, but WITHOUT ANY WARRANTY; without even the implied
+ warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+ PURPOSE.  See the GNU General Public License for more
+ details.
+ .
+ You should have received a copy of the GNU General Public
+ License along with this package; if not, write to the Free
+ Software Foundation, Inc., 51 Franklin St, Fifth Floor,
+ Boston, MA  02110-1301 USA
+ .
+ On Debian systems, the full text of the GNU General Public
+ License version 2 can be found in the file
+ `/usr/share/common-licenses/GPL-2'.

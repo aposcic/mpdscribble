@@ -1,0 +1,56 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: mpdscribble@packages.debian.org\n"
+"POT-Creation-Date: 2008-09-22 14:51+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: boolean
+#. Description
+#: ../mpdscribble.templates:1001
+msgid "Install system mpdscribble service?"
+msgstr ""
+
+#. Type: boolean
+#. Description
+#: ../mpdscribble.templates:1001
+msgid ""
+"You can install mpdscribble as a system daemon.  The mpdscribble service "
+"will be started on boot. Note that is not necessary to run mpd as a system "
+"service as it runs fine when started manually using a regular user account."
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../mpdscribble.templates:2001
+msgid "Last.fm username:"
+msgstr ""
+
+#. Type: string
+#. Description
+#: ../mpdscribble.templates:2001
+msgid "Enter username you use on Last.fm."
+msgstr ""
+
+#. Type: password
+#. Description
+#: ../mpdscribble.templates:3001
+msgid "Last.fm password:"
+msgstr ""
+
+#. Type: password
+#. Description
+#: ../mpdscribble.templates:3001
+msgid "Enter password you use on Last.fm."
+msgstr ""

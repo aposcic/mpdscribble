@@ -1,0 +1,2 @@
+debian/mpdscribble-default usr/share/mpdscribble
+doc/mpdscribble.conf usr/share/mpdscribble

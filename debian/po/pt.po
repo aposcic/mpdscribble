@@ -1,0 +1,60 @@
+# Portuguese translation for mpdscribble's debconf messages
+# Copyright (C) 2007 Migel Figueiredo
+# This file is distributed under the same license as the mpdscribble package.
+# Miguel Figueiredo <elmig@debianpt.org>, 2007.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mpdscribble\n"
+"Report-Msgid-Bugs-To: mpdscribble@packages.debian.org\n"
+"POT-Creation-Date: 2008-09-22 14:51+0200\n"
+"PO-Revision-Date: 2007-03-09 21:43+0000\n"
+"Last-Translator: Miguel Figueiredo <elmig@debianpt.org>\n"
+"Language-Team: Portuguese <traduz@debianpt.org>\n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: boolean
+#. Description
+#: ../mpdscribble.templates:1001
+msgid "Install system mpdscribble service?"
+msgstr "Instalar o serviço de sistema mpdscribble?"
+
+#. Type: boolean
+#. Description
+#: ../mpdscribble.templates:1001
+msgid ""
+"You can install mpdscribble as a system daemon.  The mpdscribble service "
+"will be started on boot. Note that is not necessary to run mpd as a system "
+"service as it runs fine when started manually using a regular user account."
+msgstr ""
+"Você pode instalar o mpdscribble como um daemon de sistema.  O serviço "
+"mdpscribble será iniciado no arranque. Note que isto não é necessário para "
+"correr o mpd como um serviço do sistema já que corre sem problemas quando "
+"iniciado manualmente utilizado uma conta de utilizador normal."
+
+#. Type: string
+#. Description
+#: ../mpdscribble.templates:2001
+msgid "Last.fm username:"
+msgstr "Nome de utilizador do Last.fm:"
+
+#. Type: string
+#. Description
+#: ../mpdscribble.templates:2001
+msgid "Enter username you use on Last.fm."
+msgstr "Introduza o nome de utilizador que utiliza no Last.fm."
+
+#. Type: password
+#. Description
+#: ../mpdscribble.templates:3001
+msgid "Last.fm password:"
+msgstr "Palavra-passe do Last.fm:"
+
+#. Type: password
+#. Description
+#: ../mpdscribble.templates:3001
+msgid "Enter password you use on Last.fm."
+msgstr "Introduza a palavra-passe que utiliza no Last.fm."

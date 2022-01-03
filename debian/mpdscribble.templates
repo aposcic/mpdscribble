@@ -1,0 +1,17 @@
+Template: mpdscribble/systemwide
+Type: boolean
+Default: false
+_Description: Install system mpdscribble service?
+ You can install mpdscribble as a system daemon.  The mpdscribble service will be started on boot.
+ Note that is not necessary to run mpd as a system service as it runs fine
+ when started manually using a regular user account.
+
+Template: mpdscribble/user
+Type: string
+_Description: Last.fm username:
+ Enter username you use on Last.fm.
+
+Template: mpdscribble/password
+Type: password
+_Description: Last.fm password:
+ Enter password you use on Last.fm.

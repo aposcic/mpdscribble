@@ -1,0 +1,91 @@
+# mpdscribble po-debconf translation to Spanish.
+# Copyright (C) 2007.
+# This file is distributed under the same license as the mpdscribble package.
+#
+#  Changes:
+# - Initial translation
+#       Elías A.M. <rumbo_4000@yahoo.es>
+#
+# - Last revision:
+#       Fernando González de Requena <fgrequena@gmail.com>, 2009.
+#
+#
+#  Traductores, si no conoce el formato PO, merece la pena leer la 
+#  documentación de gettext, especialmente las secciones dedicadas a este
+#  formato, por ejemplo ejecutando:
+#         info -n '(gettext)PO Files'
+#         info -n '(gettext)Header Entry'
+#
+# Equipo de traducción al español, por favor lean antes de traducir
+# los siguientes documentos:
+#
+# - El proyecto de traducción de Debian al español
+#   http://www.debian.org/intl/spanish/
+#   especialmente las notas y normas de traducción en
+#   http://www.debian.org/intl/spanish/notas
+#
+# - La guía de traducción de po's de debconf:
+#   /usr/share/doc/po-debconf/README-trans
+#   o http://www.debian.org/intl/l10n/po-debconf/README-trans
+#
+# Si tiene dudas o consultas sobre esta traducción consulte con el último
+# traductor (campo Last-Translator) y ponga en copia a la lista de
+# traducción de Debian al español (<debian-l10n-spanish@lists.debian.org>)
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mpdscribble 0.2.12-13\n"
+"Report-Msgid-Bugs-To: mpdscribble@packages.debian.org\n"
+"POT-Creation-Date: 2008-09-22 14:51+0200\n"
+"PO-Revision-Date: 2009-01-10 18:13+0100\n"
+"Last-Translator: Fernando González de Requena <fgrequena@gmail.com>\n"
+"Language-Team: spanish <debian-l10n-spanish@lists.debian.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+
+#. Type: boolean
+#. Description
+#: ../mpdscribble.templates:1001
+msgid "Install system mpdscribble service?"
+msgstr "¿Desea instalar el servicio del sistema mpdscribble?"
+
+#. Type: boolean
+#. Description
+#: ../mpdscribble.templates:1001
+msgid ""
+"You can install mpdscribble as a system daemon.  The mpdscribble service "
+"will be started on boot. Note that is not necessary to run mpd as a system "
+"service as it runs fine when started manually using a regular user account."
+msgstr ""
+"Puede instalar mpdscribble como un demonio del sistema. El servicio "
+"mpdscribble se iniciará en el arranque. Tenga en cuenta que no es necesario "
+"ejecutar mpd como un servicio del sistema, puesto que funciona correctamente "
+"si se ejecuta manualmente desde una cuenta de usuario normal."
+
+#. Type: string
+#. Description
+#: ../mpdscribble.templates:2001
+msgid "Last.fm username:"
+msgstr "Nombre de usuario de Last.fm:"
+
+#. Type: string
+#. Description
+#: ../mpdscribble.templates:2001
+msgid "Enter username you use on Last.fm."
+msgstr "Introduzca el nombre de usuario que utiliza en Last.fm."
+
+#. Type: password
+#. Description
+#: ../mpdscribble.templates:3001
+msgid "Last.fm password:"
+msgstr "Contraseña de Last.fm:"
+
+#. Type: password
+#. Description
+#: ../mpdscribble.templates:3001
+msgid "Enter password you use on Last.fm."
+msgstr "Introduzca la contraseña que utiliza en Last.fm."
