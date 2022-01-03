@@ -9,8 +9,7 @@ Copyright: 2008-2010, The Music Player Daemon Project
 License: GPL-2+
 
 Files: debian/*
-Copyright: 2020, 2021, Geoffroy Youri Berret <efrim@azylum.org>
-  2012-2019, Andrey Rahmatullin <wrar@debian.org>
+Copyright: 2012-2022, Andrey Rahmatullin <wrar@debian.org>
   2012, Daniel Martí <danielmarti.debian@gmail.com>
   2005-2009, Michal Čihař <nijel@debian.org>
 License: GPL-2+
@@ -38,12 +37,12 @@ Copyright: 2005-2012, Miroslav Kure <kurem@debian.cz>
 License: GPL-2+
 
 Files: src/*
-Copyright: 2008-2019, The Music Player Daemon Project
+Copyright: 2008-2021, The Music Player Daemon Project
   2005-2008, Kuno Woudt <kuno@frob.nl>
 License: GPL-2+
 
 Files: src/AsioGetIoService.hxx
-Copyright: 2008-2019, Max Kellermann <max.kellermann@gmail.com>
+Copyright: 2008-2021, Max Kellermann <max.kellermann@gmail.com>
 License: BSD-2-clause
 
 Files: src/AsioServiceFwd.hxx
@@ -51,49 +50,49 @@ Files: src/AsioServiceFwd.hxx
   src/IniFile.hxx
   src/SdDaemon.hxx
   src/gcc.h
-Copyright: 2003-2019, The Music Player Daemon Project
+Copyright: 2003-2021, The Music Player Daemon Project
 License: GPL-2+
 
 Files: src/lib/*
-Copyright: 2008-2019, Max Kellermann <max.kellermann@gmail.com>
+Copyright: 2008-2021, Max Kellermann <max.kellermann@gmail.com>
 License: BSD-2-clause
 
 Files: src/lib/curl/Escape.cxx
   src/lib/curl/Global.cxx
   src/lib/curl/Request.cxx
-Copyright: 2003-2019, The Music Player Daemon Project
+Copyright: 2003-2021, The Music Player Daemon Project
 License: GPL-2+
 
 Files: src/lib/curl/Escape.hxx
   src/lib/curl/Global.hxx
   src/lib/curl/Handler.hxx
   src/lib/curl/Request.hxx
-Copyright: 2008-2019, The Music Player Daemon Project
+Copyright: 2008-2021, The Music Player Daemon Project
   2005-2008, Kuno Woudt <kuno@frob.nl>
 License: GPL-2+
 
 Files: src/system/*
-Copyright: 2008-2019, Max Kellermann <max.kellermann@gmail.com>
+Copyright: 2008-2021, Max Kellermann <max.kellermann@gmail.com>
 License: BSD-2-clause
 
 Files: src/time/*
-Copyright: 2008-2019, Max Kellermann <max.kellermann@gmail.com>
+Copyright: 2008-2021, Max Kellermann <max.kellermann@gmail.com>
 License: BSD-2-clause
 
 Files: src/util/*
-Copyright: 2008-2019, Max Kellermann <max.kellermann@gmail.com>
+Copyright: 2008-2021, Max Kellermann <max.kellermann@gmail.com>
 License: BSD-2-clause
 
 Files: src/util/Compiler.h
   src/util/OptionDef.hxx
   src/util/OptionParser.cxx
   src/util/OptionParser.hxx
-Copyright: 2003-2019, The Music Player Daemon Project
+Copyright: 2003-2021, The Music Player Daemon Project
 License: GPL-2+
 
 Files: src/util/PrintException.cxx
   src/util/PrintException.hxx
-Copyright: 2007-2019, Content Management AG
+Copyright: 2007-2021, Content Management AG
 License: BSD-2-clause
 
 License: BSD-2-clause

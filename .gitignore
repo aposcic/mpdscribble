@@ -4,3 +4,13 @@
 .stgit-edit.txt
 .vscode/
 build/
+*.buildinfo
+*.changes
+debian/.debhelper/
+debian/mpdscribble/
+*.debhelper
+*.log
+*.substvars
+debhelper-build-stamp
+files
+obj-*/

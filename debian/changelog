@@ -1,20 +1,9 @@
-mpdscribble (0.23-1) UNRELEASED; urgency=medium
+mpdscribble (0.23-0~aposcic1) UNRELEASED; urgency=medium
 
-  * New upstream release (closes: #973958).
-  * Update debian/watch (missing xz compression)
-  * Enable pgpmode in watch file, add upstream signing key
-  * Add basic upstream metadata
-  * debian/patches: Drop all patches, upstream uses to meson/ninja
-  * Update for meson build
-  * debian/mpdscribble.docs: fixed README extension
-  * Drop -dbg migration code in d/rules
-  * Don't install COPYING file
-  * Update copyright file
-  * Fixed national-encoding in debian/po files
-  * Fixed recursive-privilege-change in postinst script
-  * Bump standards to 4.5.1 (no changes needed)
+  * Custom upstream release v0.23-ap1
+  * Debian packaging fixes and updates (based on Geoffroy Youri Berret's work)
 
- -- Geoffroy Youri Berret <efrim@azylum.org>  Tue, 20 Apr 2021 14:55:10 +0200
+ -- Antonio Poscic <antonio.poscic@gmail.com>  Mon, 03 Jan 2022 17:25:11 +0100
 
 mpdscribble (0.22-6) unstable; urgency=medium
 

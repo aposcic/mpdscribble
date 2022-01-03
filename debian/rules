@@ -6,7 +6,7 @@ export DEB_BUILD_MAINT_OPTIONS=hardening=+all
 	dh $@
 
 ifeq ($(DEB_HOST_ARCH_OS), linux)
-WITH_SYSTEMD=-Dsystemd=enabled
+WITH_SYSTEMD=-Dsystemd=enabled -Dsystemd_system_unit_dir=/lib/systemd/system -Dsystemd_user_unit_dir=/usr/lib/systemd/user
 else
 WITH_SYSTEMD=-Dsystemd=disabled
 endif
@@ -21,3 +21,9 @@ override_dh_auto_install:
 override_dh_clean:
 	debconf-updatepo
 	dh_clean
+
+override_dh_installsystemd:
+	dh_installsystemd --no-enable
+
+override_dh_installsystemduser:
+	dh_installsystemduser --no-enable

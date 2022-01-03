@@ -42,18 +42,18 @@ case "$1" in
         rm -f $tempfile
 
         # update permissions
-        chown mpdscribble:mpdscribble /var/cache/mpdscribble /var/cache/mpdscribble/*.journal
+        chown -R mpdscribble:mpdscribble /var/cache/mpdscribble
         chgrp mpdscribble /etc/mpdscribble.conf
         chmod 0640 /etc/mpdscribble.conf
         chgrp mpdscribble /etc/default/mpdscribble
         chmod 0644 /etc/default/mpdscribble
         
         if ! dpkg-statoverride --list --quiet /var/cache/mpdscribble >/dev/null ; then
-            dpkg-statoverride --force --quiet --update --add mpdscribble mpdscribble 0700 /var/cache/mpdscribble
+            dpkg-statoverride --force-all --quiet --update --add mpdscribble mpdscribble 0700 /var/cache/mpdscribble
         fi
 
         if ! dpkg-statoverride --list --quiet /etc/mpdscribble.conf >/dev/null ; then
-            dpkg-statoverride --force --quiet --update --add root mpdscribble 0640 /etc/mpdscribble.conf
+            dpkg-statoverride --force-all --quiet --update --add root mpdscribble 0640 /etc/mpdscribble.conf
         fi
     ;;
 

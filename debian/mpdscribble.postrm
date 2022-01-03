@@ -10,13 +10,13 @@ if [ "$1" = "purge" ] ; then
 
     # remove overrides
     if dpkg-statoverride --list --quiet /var/cache/mpdscribble/cache >/dev/null; then
-        dpkg-statoverride --force --quiet --remove /var/cache/mpdscribble/cache
+        dpkg-statoverride --force-all --quiet --remove /var/cache/mpdscribble/cache
     fi
     if dpkg-statoverride --list --quiet /var/cache/mpdscribble >/dev/null; then
-        dpkg-statoverride --force --quiet --remove /var/cache/mpdscribble
+        dpkg-statoverride --force-all --quiet --remove /var/cache/mpdscribble
     fi
     if dpkg-statoverride --list --quiet /etc/mpdscribble.conf >/dev/null; then
-        dpkg-statoverride --force --quiet --remove /etc/mpdscribble.conf
+        dpkg-statoverride --force-all --quiet --remove /etc/mpdscribble.conf
     fi
     
     # delete ucf handled config file
