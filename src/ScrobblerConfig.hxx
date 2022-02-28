@@ -35,10 +35,11 @@ struct ScrobblerConfig {
 	std::string password;
 
 	/**
- 	 * Regex patterns applied on album and track titles.  Used
-	 * to remove unwanted parts (e.g. "remastered") before
-	 * scrobbling.
+ 	 * Regex patterns applied on the artist, album and
+	 * track fields. Used to remove unwanted parts
+	 * (e.g. "remastered") before scrobbling.
    */
+	std::string artist_name_remove;
 	std::string album_title_remove;
 	std::string track_title_remove;
 

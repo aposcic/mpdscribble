@@ -236,6 +236,7 @@ load_scrobbler_config(const Config &config,
 			throw std::runtime_error("No 'password'");
 	}
 
+	scrobbler.artist_name_remove = GetStdString(section, "artist_name_remove");
 	scrobbler.album_title_remove = GetStdString(section, "album_title_remove");
 	scrobbler.track_title_remove = GetStdString(section, "track_title_remove");
 

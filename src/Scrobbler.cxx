@@ -500,7 +500,9 @@ Scrobbler::Submit() noexcept
 		/* the submission queue is empty.  See if a "now playing" song is
 		   scheduled - these should be sent after song submissions */
 		if (record_is_defined(&now_playing))
-			SendNowPlaying(now_playing.artist.c_str(),
+			SendNowPlaying(
+				       clean_title(now_playing.artist,
+							 		config.artist_name_remove).c_str(),
 				       clean_title(now_playing.track,
 							 		config.track_title_remove).c_str(),
 				       clean_title(now_playing.album,
@@ -524,7 +526,8 @@ Scrobbler::Submit() noexcept
 
 		const auto *song = &i;
 
-		post_data.AppendIndexed("a", count, song->artist);
+		post_data.AppendIndexed("a", count, clean_title(song->artist,
+																					config.artist_name_remove));
 		post_data.AppendIndexed("t", count, clean_title(song->track,
 																					config.track_title_remove));
 		post_data.AppendIndexed("l", count,
