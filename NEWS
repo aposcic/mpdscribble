@@ -1,3 +1,6 @@
+mpdscribble 0.23-ap2 - (2022-02-28)
+  * scrobbler: support remove patterns for artist names
+
 mpdscribble 0.23-ap1 - (2021-12-29)
   * scrobbler: allow zero-length songs to scrobble
   * scrobbler: support remove patterns for album/track titles
